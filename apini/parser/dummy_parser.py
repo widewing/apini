@@ -18,5 +18,5 @@ class DummyParser(DocParser):
             line = doc.readline()
             if line == "":
                 return
-            self._add_record(line)
+            self._add_record(line.strip())
 

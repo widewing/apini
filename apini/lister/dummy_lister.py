@@ -19,7 +19,7 @@ class DummyLister(DocLister):
             if line == "":
                 return
             if line.startswith("dummy://list"):
-                self._add_index(line)
+                self._add_index(line.strip())
             else:
-                self._add_doc(line)
+                self._add_doc(line.strip())
 
